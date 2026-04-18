@@ -1,0 +1,12 @@
+name: dailyreport
+on:
+  schedule:
+    - cron: 0 9 * * 1-5
+    - cron: 0 17 * * 1-5 # ９時から１７時までの間に毎日実行
+  
+jobs:
+  my-job:
+    runs-on: ubuntu-latest # ジョブが実行される環境を指定
+    steps:
+      - name: first step
+        run: echo "Hello World."
