@@ -1,9 +1,9 @@
 name: dailyreport
 on:
   schedule:
-    - cron: '1 * * * *'
+    - cron: '5 * * * *'
   workflow_dispatch: # 手動でワークフローをトリガーするためのオプション
-  
+
   
 jobs:
   my-job:
