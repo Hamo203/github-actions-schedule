@@ -1,8 +1,10 @@
 name: dailyreport
 on:
   schedule:
-    - cron: 0 9 * * 1-5
-    - cron: 0 17 * * 1-5 # ９時から１７時までの間に毎日実行
+    - cron: '0 9 * * 1-5'
+    - cron: '0 17 * * 1-5' # ９時から１７時までの間に毎日実行
+    timezone: Asia/Tokyo # タイムゾーンを日本時間に設定
+    workflow_dispatch: # 手動でワークフローをトリガーするためのオプション
   
 jobs:
   my-job:
